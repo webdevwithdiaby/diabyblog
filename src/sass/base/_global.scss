@@ -1,0 +1,42 @@
+body {
+  padding: calc(var(--space-m) * 1.5);
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-300);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: var(--fw-700);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: calc(var(--space-l) * 1.25) 0;
+
+  @media only screen and (min-width: 40em) {
+    padding: calc(var(--space-l) * 1.75) 0;
+  }
+}
+
+.flow-content > * + * {
+  margin-top: var(--spacer);
+}

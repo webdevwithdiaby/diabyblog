@@ -1,0 +1,9 @@
+[class*="bg-"] {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.bg-dark {
+  --bg: var(--clr-neutral-900);
+  --fg: var(--clr-neutral-200);
+}

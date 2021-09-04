@@ -1,0 +1,57 @@
+.home {
+  padding-bottom: 3.7rem;
+
+  .section-title {
+    color: var(--clr-neutral-400);
+    line-height: 1;
+    font-size: var(--fs-900);
+  }
+
+  .section-subtitle {
+    font-size: var(--fs-600);
+    line-height: 1.1;
+  }
+
+  .intro {
+    font-family: var(--ff-serif);
+
+    .content {
+      --spacer: var(--space-l);
+
+      .text {
+        --spacer: calc(var(--space-l) * 1.75);
+        @media only screen and (min-width: 40em) {
+          --spacer: 6.8rem;
+        }
+      }
+    }
+
+    .title {
+      font-size: var(--fs-900);
+      font-weight: var(--fw-200);
+      line-height: 1;
+    }
+
+    .paragraph {
+      font-size: var(--fs-600);
+      font-weight: var(--fw-200);
+    }
+  }
+
+  .about {
+    --spacer: calc(var(--space-xs) * 5.5);
+    font-weight: var(--fw-200);
+    font-family: var(--ff-serif);
+    font-size: var(--fs-500);
+
+    .title {
+      color: var(--clr-neutral-400);
+      line-height: 1;
+    }
+  }
+
+  .blogs {
+    font-weight: var(--fw-200);
+    font-family: var(--ff-serif);
+  }
+}

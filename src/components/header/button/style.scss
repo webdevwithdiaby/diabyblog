@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg, rgb(23, 172, 134));
+  color: var(--fg, #fff);
+  padding: var(--space-s) var(--space-m);
+
+  .chevron {
+    margin-left: var(--space-s);
+  }
+
+  // sizes
+  &--md {
+    padding: var(--space-s) var(--space-m);
+  }
+
+  &--lg {
+    padding: var(--space-m) var(--space-l);
+  }
+
+  // types
+  &--link {
+    padding: 0;
+    background-color: transparent;
+    color: var(--clr-neutral-900);
+
+    &:hover {
+      color: var(--clr-primary-400);
+    }
+  }
+}

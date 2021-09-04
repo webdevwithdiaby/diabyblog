@@ -1,0 +1,88 @@
+*:root {
+  --space-default: 1.6rem;
+  --space-xs: 0.4rem;
+  --space-s: 0.8rem;
+  --space-m: 1.6rem;
+  --space-l: 3.2rem;
+  --space-xl: 6.4rem;
+
+  --spacer: 1.6rem;
+
+  --space-inset-default: 1.6rem 1.6rem 1.6rem 1.6rem;
+  --space-inset-xs: 0.4rem 0.4rem 0.4rem 0.4rem;
+  --space-inset-s: 0.8rem 0.8rem 0.8rem 0.8rem;
+  --space-inset-m: 1.6rem 1.6rem 1.6rem 1.6rem;
+  --space-inset-l: 3.2rem 3.2rem 3.2rem 3.2rem;
+  --space-inset-xl: 6.4rem 6.4rem 6.4rem 6.4rem;
+
+  --space-stack-default: 0 0 1.6rem 0;
+  --space-stack-xs: 0 0 0.4rem 0;
+  --space-stack-s: 0 0 0.8rem 0;
+  --space-stack-m: 0 0 1.6rem 0;
+  --space-stack-l: 0 0 3.2rem 0;
+  --space-stack-xl: 0 0 6.4rem 0;
+}
+// $space-inset-default = 16px 16px 16px 16px;
+// $space-inset-xs = 4px 4px 4px 4px;
+// $space-inset-s = 8px 8px 8px 8px;
+// $space-inset-m = 16px 16px 16px 16px;
+// $space-inset-l = 32px 32px 32px 32px;
+// $space-inset-xl = 64px 64px 64px 64px;
+
+// $space-stack-default = 0 0 16px 0;
+// $space-stack-xs = 0 0 4px 0;
+// $space-stack-s = 0 0 8px 0;
+// $space-stack-m = 0 0 16px 0;
+// $space-stack-l = 0 0 32px 0;
+// $space-stack-xl = 0 0 64px 0;
+
+// $space-default = 16px;
+// $space-xs = 4px;
+// $space-s = 8px;
+// $space-m = 16px;
+// $space-l = 32px;
+// $space-xl = 64px;
+
+//insetting content from an edge
+// varying an inset shape
+// spacing items inline
+// stacking items within and between a component
+
+// core concepts
+// inset
+// inset squish  [y spacing lesser than x spaing ]  y= -50% of x spacing
+// inset stretch
+// stack
+// inline
+
+// Concept 1: (Square) Inset
+// An inset offers indents content on all four sides like the matte of the framed photo on a wall.
+// It’s use is widespread, across many components at varying sizes,
+// whether our 3-Up module and block messages medium feel, extra compact pills,
+// or spacious footers and mastheads.
+// The default is also a useful starting point for mobile first design,
+//  expanding to large at a relevant viewport width like 768px.
+
+// Concept 2: Squish Inset
+// A squished inset reduces space top and bottom, in our case by 50%.
+// While less common than its squared counterpart, a
+// squish occurred frequently in elements (like a button) and cell-like
+//  containers like a data table or list item.
+
+// Concept 3: Stretch Inset
+// Contrasted with a button or pill’s squish, we found ourselves vertically stretching the insets of textboxes,
+//  textareas, and other form elements.
+
+// Concept 4: Stack
+// With all due respect to horizontally scrolled UI, the overwhelming majority scroll vertically.
+// And that means one thing: we stack things. We stack message on heading on data table.
+// We stack modules in rails. We stack copy, pills & toolbars, all in a card, each in a grid.
+// Heck, infinite scroll means infinite stack! We stack, stack, stack.
+
+// Concept 5: Inline
+// We also arrange objects inline, wrapping as they flow like text from the left or right.
+// Such objects — pills, tags, breadcrumbs, and more — may stand alone or stack and mingle with other objects.
+
+// Solve Collisions like Line Height Systematically
+// Simple inset padding and stack margin rules collided with a long-known spatial adversary: line-height.
+// This interaction increments space unpredictably
